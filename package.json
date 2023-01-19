@@ -1,0 +1,21 @@
+{
+  "name": "oc2-integrate-a-mobile-website-with-animations-in-css",
+  "version": "1.0.0",
+  "description": "OpenClassrooms second project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samdolbear/OC2-Integrate-a-mobile-website-with-animations-in-CSS.git"
+  },
+  "author": "samdolbear",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/samdolbear/OC2-Integrate-a-mobile-website-with-animations-in-CSS/issues"
+  },
+  "homepage": "https://github.com/samdolbear/OC2-Integrate-a-mobile-website-with-animations-in-CSS#readme"
+}
