@@ -11,16 +11,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
 
     <!-- Or prefix path? ./public/css/prefixed/styles.css-->
-    <link rel="stylesheet" href="./public/css/styles.css"> 
+    <link rel="stylesheet" href="./public/css/prefixed/styles.css"> 
 
     <title>ohmyfood</title>
 </head>
 <!-- Page container -->
 <body>
+    <!-- logo and location -->
+        <header class="header">
+            <div>
+                <!-- Accessability -->
+                <h1 class="header__title">ohmyfood</h1>
+                <img class="header__image" src="./public/images/logo/ohmyfood@2x.svg" alt="ohmyfood logo">
+            </div>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Paris, Belleville</p>
+            </div>
+
+        </header>
+    
     <!-- Content container -->
-    <main>
-        <!-- logo and location -->
-        <header><h1>ohmyfood</h1></header>
+    <main>     
         <!-- book menu card and how it works cards -->
         <section><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></section>
         <!-- restaurant cards -->
