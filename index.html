@@ -22,7 +22,7 @@
             <div class="logo">
                 <!-- Accessability -->
                 <h1 class="logo__heading">ohmyfood</h1>
-                <img class="logo__image" src="./public/images/logo/ohmyfood@2x.svg" alt="ohmyfood logo">
+                <img id="home" class="logo__image" src="./public/images/logo/ohmyfood@2x.svg" alt="ohmyfood logo">
             </div>
             <div class="location">
                 <i class="fa-solid fa-location-dot location__icon"></i>
@@ -37,23 +37,40 @@
         <!-- restaurant cards -->
         <section><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></section>
     </main>
+
     <!-- footer -->
-    <footer>
-        <img class="logo__image logo__image--footer" src="./public/images/logo/ohmyfood@2x.svg" alt="ohmyfood logo">
-        <ul>
-            <li> 
-                <i class="fa-solid fa-utensils"></i>
-                <a href="#">Suggest a restaurant</a> 
+    <footer class="footer">
+        <a href="#home">
+            <img class="footer__logo" src="./public/images/logo/ohmyfood@2x.svg" alt="ohmyfood logo">
+        </a>
+        <ul class="footer__list">
+            <li class="footer__list-item">                 
+                <a class="footer__link" href="#">
+                    <i class="fa-solid fa-utensils footer__icon"></i>
+                    <span class="footer__link--color">Suggest a restaurant</span>
+                </a> 
             </li>
-            <li>
-                <i class="fa-solid fa-handshake-angle"></i> 
-                <a href="#">Become a partner</a> 
+            <li class="footer__list-item"> 
+                <a class="footer__link" href="#">
+                    <i class="fa-solid fa-handshake-angle footer__icon"></i>
+                    <span class="footer__link--color">
+                        Become a partner
+                    </span>
+                </a> 
             </li>
-            <li> 
-                <a href="#">Legal</a> 
+            <li class="footer__list-item"> 
+                <a class="footer__link" href="#">
+                    <span class="footer__link--color">
+                        Legal
+                    </span>
+                </a> 
             </li>
-            <li> 
-                <a href="#">Contact</a> 
+            <li class="footer__list-item"> 
+                <a class="footer__link" href="#">
+                    <span class="footer__link--color">
+                        Contact
+                    </span>
+                </a> 
             </li>
         </ul>
     </footer>
