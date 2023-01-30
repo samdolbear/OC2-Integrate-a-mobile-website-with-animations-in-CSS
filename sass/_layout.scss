@@ -41,12 +41,11 @@ main {
     }
     &__image {
         width: 130px;
-    height: auto;
-    margin-top: 20px;
-    margin-left: 15px;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 15px;
     }
 }
-
 
 .location {
     display: flex;
@@ -105,6 +104,12 @@ main {
         padding-left: 20px;
         padding-top: 20px;
         filter: invert(95%) sepia(46%) saturate(2%) hue-rotate(244deg) brightness(110%) contrast(100%);
+        &:hover {
+            filter: invert(90%) sepia(1%) saturate(25%) hue-rotate(342deg) brightness(94%) contrast(85%);
+        }
+        &:active {
+            filter: invert(90%) sepia(1%) saturate(25%) hue-rotate(342deg) brightness(94%) contrast(85%);
+        }
     }
     &__list {
         list-style: none;
@@ -127,6 +132,12 @@ main {
         color: white;
         font-size: 14px;
         font-weight: bold;
+        &:hover {
+            color: darken(white, 20%);
+        }
+        &:active {
+            color: darken(white, 20%);
+        }
     }  
 }
 // -------------------- Footer END--------------------
