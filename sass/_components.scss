@@ -27,7 +27,21 @@
 // -------------------- Loading Animation END --------------------
 
 // -------------------- Buttons START --------------------
-
+.button {
+    // Adjustments to visualize rules properly
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+    // Rules
+    color: #fff;
+    font-weight: bold;
+    background: linear-gradient(to bottom right, $secondary-color, $primary-color 90%);
+    padding: 16px 25px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 50px 50px; 
+}
 
 
 
