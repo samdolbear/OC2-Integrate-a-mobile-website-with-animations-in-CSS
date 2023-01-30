@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $title-logo, cursive;
 }
 // -------------------- Fonts END --------------------
+
 // -------------------- LAYOUT START --------------------
 body {
     display: flex;
@@ -23,6 +24,7 @@ main {
     max-width: 1500px;
 }
 // -------------------- LAYOUT END --------------------
+
 // -------------------- Header START--------------------
 // Home page
 .logo__heading {
@@ -85,8 +87,14 @@ header {
         color: lighten($quaternary-color, 30%);
     }
 }
-
-
-
-
 // -------------------- Header END--------------------
+
+// -------------------- Footer START--------------------
+
+
+
+
+
+
+
+// -------------------- Footer END--------------------
