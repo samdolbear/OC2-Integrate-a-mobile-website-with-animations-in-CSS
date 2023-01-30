@@ -27,10 +27,6 @@ main {
 
 // -------------------- Header START--------------------
 // Home page
-.logo__heading {
-    display: none;
-}
-
 .header {
     display: flex;
     flex-direction: column;
@@ -38,12 +34,19 @@ main {
     width: 100%;
 }
 
-.logo__image {
-    width: 130px;
+.logo {
+    padding-bottom: 8px;
+    &__heading {
+        display: none;
+    }
+    &__image {
+        width: 130px;
     height: auto;
     margin-top: 20px;
     margin-left: 15px;
+    }
 }
+
 
 .location {
     display: flex;
@@ -126,7 +129,4 @@ main {
         font-weight: bold;
     }  
 }
-
-
-
 // -------------------- Footer END--------------------
