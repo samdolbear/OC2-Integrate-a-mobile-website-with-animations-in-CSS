@@ -1,4 +1,4 @@
-// -------------------- Fonts --------------------
+// -------------------- Fonts START --------------------
 // Text
 body {
     font-family: $text, sans-serif;
@@ -8,8 +8,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: $title-logo, cursive;
 }
-
-// -------------------- Responsiveness --------------------
+// -------------------- Fonts END --------------------
+// -------------------- LAYOUT START --------------------
 body {
     display: flex;
     flex-direction: column;
@@ -22,3 +22,71 @@ main {
     flex-direction: column; 
     max-width: 1500px;
 }
+// -------------------- LAYOUT END --------------------
+// -------------------- Header START--------------------
+// Home page
+.logo__heading {
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo__image {
+    width: 130px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    background-color: lighten($quaternary-color, 95%);
+    border-top: lighten($quaternary-color, 25%) solid 1px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    &__icon {
+        color: lighten($quaternary-color, 25%);
+        font-size: 12px;
+    }  
+    &__text {
+        color: lighten($quaternary-color, 25%);
+        font-size: 12px;
+        font-weight: bold;;
+    }
+}
+
+// Menu
+.logo--menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.logo__homeLink {
+    margin-top: 10px;
+    font-size: 20px;
+    color: lighten($quaternary-color, 10%);
+    &:hover {
+        color: lighten($quaternary-color, 30%);
+    }
+    &:active {
+        color: lighten($quaternary-color, 30%);
+    }
+}
+
+
+
+
+// -------------------- Header END--------------------
