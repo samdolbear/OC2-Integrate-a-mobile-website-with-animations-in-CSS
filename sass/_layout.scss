@@ -100,6 +100,7 @@ section {
     display: flex;
     justify-content: center;
     background-color: lighten($quaternary-color, 95%);
+    padding-bottom: 50px;
 }
 
 .explore--layout {
@@ -119,6 +120,10 @@ section {
     @include text;
     max-width: 280px;
     text-align: center;
+    margin-bottom: 30px;
+    @include non-mobile {
+        max-width: none;
+      }
 }
 
 
