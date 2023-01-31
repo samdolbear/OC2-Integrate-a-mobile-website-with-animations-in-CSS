@@ -24,12 +24,14 @@ html {
 // -------------------- Mixins START --------------------
 // Titles
 @mixin title {
-  
+  font-weight: bold;
+  font-size: 24px;
 }
 
 // Text
 @mixin text {
-  
+  font-weight: 300;
+  font-size: 16px;
 }
 
 
