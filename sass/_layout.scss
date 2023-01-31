@@ -96,6 +96,24 @@ section {
 
 // -------------------- Explore Home Page START --------------------
 
+.explore {
+
+}
+
+.explore--layout {
+
+}
+
+.explore__title {
+    @include title;
+}
+
+.explore__text {
+    @include text;
+}
+
+
+
 
 // -------------------- Explore Home Page END --------------------
 
