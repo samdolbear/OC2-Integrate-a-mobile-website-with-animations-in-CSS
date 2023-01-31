@@ -59,7 +59,7 @@ section {
     gap: 10px;
     width: 100%;
     justify-content: center;
-    background-color: lighten($quaternary-color, 95%);
+    background-color: lighten($quaternary-color, 90%);
     border-top: lighten($quaternary-color, 25%) solid 1px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
     &__icon {
@@ -94,10 +94,42 @@ section {
 }
 // -------------------- Header END--------------------
 
-// -------------------- Explore Home Page START --------------------
+// -------------------- Explore Section START --------------------
+
+.explore {
+    display: flex;
+    justify-content: center;
+    background-color: lighten($quaternary-color, 95%);
+    padding-bottom: 50px;
+}
+
+.explore--layout {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center
+}
+
+.explore__title {
+    @include title;
+    margin-top: 30px;
+}
+
+.explore__text {
+    @include text;
+    max-width: 280px;
+    text-align: center;
+    margin-bottom: 30px;
+    @include non-mobile {
+        max-width: none;
+      }
+}
 
 
-// -------------------- Explore Home Page END --------------------
+
+
+// -------------------- Explore Section END --------------------
 
 // -------------------- Footer START--------------------
 .footer {
