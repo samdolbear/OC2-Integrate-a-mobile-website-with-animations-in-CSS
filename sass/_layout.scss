@@ -94,14 +94,20 @@ section {
 }
 // -------------------- Header END--------------------
 
-// -------------------- Explore Home Page START --------------------
+// -------------------- Explore Section START --------------------
 
 .explore {
-
+    display: flex;
+    justify-content: center;
+    background-color: lighten($quaternary-color, 97%);
 }
 
 .explore--layout {
-
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center
 }
 
 .explore__title {
@@ -115,7 +121,7 @@ section {
 
 
 
-// -------------------- Explore Home Page END --------------------
+// -------------------- Explore Section END --------------------
 
 // -------------------- Footer START--------------------
 .footer {
