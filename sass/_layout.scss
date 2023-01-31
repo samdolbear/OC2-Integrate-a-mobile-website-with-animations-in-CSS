@@ -15,13 +15,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 
 main {
     display: flex;
     flex-direction: column; 
-    max-width: 1500px;
+    // width: 100%;
+}
+
+section {
+    // width: 100%;
 }
 // -------------------- LAYOUT END --------------------
 
