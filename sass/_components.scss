@@ -37,10 +37,11 @@
     color: #fff;
     font-weight: bold;
     background: linear-gradient(to bottom right, $secondary-color, $primary-color 70%);
-    padding: 16px 25px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    padding: 16px 25px;   
     border: none;
     border-radius: 50px 50px;
+    @include box-shadow;
+    @include box-shadow-hover;
     &:hover, 
     &:active {
         background: linear-gradient(to bottom right, lighten($secondary-color, 2%), lighten($primary-color, 2%) 70%);
@@ -56,10 +57,12 @@
     margin: auto 20px;
     margin-top: 30px;
     overflow: hidden;
-    background-color: aqua;
-    width: 350px;
+    width: 330px;
     @include box-shadow;
     @include box-shadow-hover;
+    @include non-mobile {
+        width: 400px;
+    } 
     &__link {
         text-decoration: none;
     }  

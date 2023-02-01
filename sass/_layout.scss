@@ -171,16 +171,27 @@ main {
 // -------------------- How it Works Section End --------------------
 
 // -------------------- Restaurants Section START --------------------
-.test {
-    
-}
-
 .restaurants {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    &__container {
+    padding-top: 20px;
+    padding-bottom: 40px;    
+    margin-top: 50px;
+    background-color: lighten($quaternary-color, 95%);    
+    
+
+    &-title__container {
+        @include title;
+        width: 300px;
+        @include non-mobile {
+            width: fit-content;
+        }   
+    }
+    
+    &-card__container {
         display: flex;
         justify-content: center;
         align-items: center;
