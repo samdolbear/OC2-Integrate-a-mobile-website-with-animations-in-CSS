@@ -122,7 +122,22 @@ main {
 // -------------------- Explore Section END --------------------
 
 // -------------------- How it Works Section START --------------------
+.how {
 
+    &__title {
+        @include title;
+    } 
+    &__formation {
+
+    }
+    &__steps {
+
+    }
+    &__text {
+        @include text;
+        font-weight: bold;
+    }
+}
 
 
 

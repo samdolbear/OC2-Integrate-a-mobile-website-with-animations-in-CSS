@@ -101,9 +101,15 @@
     }
 }
 
-// How Card modifiers
-
-
+// How Card Modifiers
+.card--how {
+    background-color: lighten($quaternary-color, 95%);
+    height: 60px;
+    &:hover,
+    &:active {
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    }
+}
 
 // -------------------- Cards END --------------------
 
