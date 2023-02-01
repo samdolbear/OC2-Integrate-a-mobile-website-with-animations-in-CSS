@@ -122,7 +122,53 @@ main {
 // -------------------- Explore Section END --------------------
 
 // -------------------- How it Works Section START --------------------
-
+.how {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    &__title--container {
+        width: 300px;
+        @include non-mobile {
+            width: 500px;
+        }
+    }
+    &__title {
+        @include title;
+    } 
+    &__formation {
+        margin-top: -5px;
+    }
+    &__steps {
+        color: #fff;
+        background-color: $primary-color;
+        padding: 4px 8px 4px 8px;
+        border-radius: 30px;
+        font-size: 14px;
+        position: absolute;
+        z-index: 1; 
+        margin-top: 50px; 
+        margin-left: 8px;      
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 35px;
+        gap: 20px;
+    }
+    &__icon {
+        color: lighten($quaternary-color, 25%);
+        &--color {
+            color: $primary-color;
+        }
+    }
+    &__text {
+        @include text;
+        font-weight: bold;
+    }
+}
 
 
 
@@ -143,6 +189,10 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     background-color: lighten($quaternary-color, 30%);
+    @include non-mobile {
+        justify-content: center;
+        align-items: center;
+    } 
     &__logo {
         width: 120px;
         height: auto;
@@ -157,6 +207,11 @@ main {
     &__list {
         list-style: none;
         padding-left: 20px;
+        @include non-mobile {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        } 
     }
     &__list-item {
         color: white;
@@ -180,6 +235,6 @@ main {
         &:active {
             color: darken(white, 20%);
         }
-    }  
+    }
 }
 // -------------------- Footer END--------------------
