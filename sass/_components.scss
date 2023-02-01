@@ -61,6 +61,7 @@
     margin: 50px;
     overflow: hidden;
     background-color: aqua;
+    display: inline-flex;
     @include box-shadow;
     @include box-shadow-hover;
     &__link {
@@ -96,7 +97,7 @@
     }
 }
 
-
+// How Card modifiers
 
 
 
