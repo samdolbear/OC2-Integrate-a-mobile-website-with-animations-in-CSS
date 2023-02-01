@@ -123,15 +123,38 @@ main {
 
 // -------------------- How it Works Section START --------------------
 .how {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
     &__title {
         @include title;
     } 
     &__formation {
-
+        margin-top: -5px;
     }
     &__steps {
-
+        color: #fff;
+        background-color: $primary-color;
+        padding: 4px 8px 4px 8px;
+        border-radius: 30px;
+        font-size: 14px;
+        position: absolute;
+        z-index: 1; 
+        margin-top: 50px; 
+        margin-left: 8px;      
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 45px;
+        gap: 20px;
+        // position: relative;
+    }
+    &__icon {
+        color: lighten($quaternary-color, 25%);
     }
     &__text {
         @include text;
