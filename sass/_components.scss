@@ -82,12 +82,12 @@
     &__title {
         @include title;
         color: $quaternary-color;
-        font-size: 16px;
+        font-size: 18px;
     }
     &__text {
         @include text;
         color: $quaternary-color;
-        font-size: 12px;
+        font-size: 16px;
         margin-top: -10px;
     }
     &__heart-anime {
