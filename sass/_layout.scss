@@ -97,29 +97,26 @@ main {
     justify-content: center;
     background-color: lighten($quaternary-color, 95%);
     padding-bottom: 50px;
-}
-
-.explore--layout {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    justify-content: center;
-    align-items: center
-}
-
-.explore__title {
-    @include title;
-    margin-top: 30px;
-}
-
-.explore__text {
-    @include text;
-    max-width: 280px;
-    text-align: center;
-    margin-bottom: 30px;
-    @include non-mobile {
-        max-width: none;
-      }
+    &--layout {
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        @include title;
+        margin-top: 30px;
+    }
+    &__text {
+        @include text;
+        max-width: 280px;
+        text-align: center;
+        margin-bottom: 30px;
+        @include non-mobile {
+            max-width: none;
+        }
+    }
 }
 
 // -------------------- Explore Section END --------------------
