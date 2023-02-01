@@ -149,9 +149,8 @@ main {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding-left: 45px;
+        padding-left: 35px;
         gap: 20px;
-        // position: relative;
     }
     &__icon {
         color: lighten($quaternary-color, 25%);
@@ -181,6 +180,10 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     background-color: lighten($quaternary-color, 30%);
+    @include non-mobile {
+        justify-content: center;
+        align-items: center;
+    } 
     &__logo {
         width: 120px;
         height: auto;
@@ -195,6 +198,11 @@ main {
     &__list {
         list-style: none;
         padding-left: 20px;
+        @include non-mobile {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        } 
     }
     &__list-item {
         color: white;
@@ -218,6 +226,6 @@ main {
         &:active {
             color: darken(white, 20%);
         }
-    }  
+    }
 }
 // -------------------- Footer END--------------------

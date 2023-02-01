@@ -110,6 +110,9 @@
     &:active {
         @include box-shadow;
     }
+    @include non-mobile {
+        width: 500px;
+    }
 }
 
 // -------------------- Cards END --------------------
