@@ -128,6 +128,12 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    &__title--container {
+        width: 300px;
+        @include non-mobile {
+            width: 500px;
+        }
+    }
     &__title {
         @include title;
     } 
@@ -154,6 +160,9 @@ main {
     }
     &__icon {
         color: lighten($quaternary-color, 25%);
+        &--color {
+            color: $primary-color;
+        }
     }
     &__text {
         @include text;
