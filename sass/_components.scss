@@ -47,10 +47,10 @@
 // Base card focused on restaurant cards primarily
 .card {
     border-radius: 15px;
-    margin: auto 20px;
+    margin: auto auto;
     margin-top: 30px;
     overflow: hidden;
-    width: 330px;
+    width: 320px;
     @include box-shadow;
     @include box-shadow-hover;
     @include non-mobile {
@@ -95,6 +95,7 @@
     background-color: lighten($quaternary-color, 95%);
     height: 70px;
     width: 300px;
+    margin: auto 20px;
     &-purple {
         background-color: lighten($primary-color, 30%);
     }
@@ -105,6 +106,7 @@
     }
     @include non-mobile {
         width: 500px;
+        margin: 25px 20px;
     }
 }
 
