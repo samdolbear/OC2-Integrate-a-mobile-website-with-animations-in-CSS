@@ -111,6 +111,14 @@
 // -------------------- Cards END --------------------
 
 // -------------------- Heart Button Animation START --------------------
-
+.card__heart-anime {
+    transition: fill 0.2s ease;
+    transform: scale(1);
+  
+    &:hover {
+      fill: $primary-color;
+      transform: scale(1.2);
+    }
+  }
 
 // -------------------- Heart Button Animation END --------------------
