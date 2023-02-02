@@ -111,18 +111,32 @@
 // -------------------- Cards END --------------------
 
 // -------------------- Heart Button Animation START --------------------
-// .card__heart-container {
-//     fill: transparent;
-//     stroke: lighten($quaternary-color, 25%);
-//     stroke-width: 20;
-//     cursor: pointer;
-//     margin-right: 30px;
-//     svg {
-//         overflow: visible;
-//         width: 10rem;
-//         width: 25px;
-//       }
-// }
-
+@keyframes animateHeart {
+    0% {
+      fill: transparent;
+    }
+    10% {
+      fill: #9356DC;
+    }
+    25% {
+      fill: #9356DC;
+    }
+    50% {
+      fill: #9356DC;
+    }
+    75% {
+      fill: #9356DC;
+    }
+    90% {
+      fill: #9356DC;
+    }
+    100% {
+      fill: #9356DC;
+    }
+  }
+  
+  .card__heart:hover {
+    animation: animateHeart 20s ease-in-out;
+  }
 
 // -------------------- Heart Button Animation END --------------------
