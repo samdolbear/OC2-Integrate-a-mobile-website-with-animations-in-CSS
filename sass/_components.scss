@@ -86,7 +86,8 @@
     &__heart-anime {
         color: lighten($quaternary-color, 50%);
         font-size: 25px; 
-        margin-right: 30px;   
+        margin-right: 30px;
+        color: aqua;   
     }
 }
 
@@ -112,13 +113,22 @@
 
 // -------------------- Heart Button Animation START --------------------
 .card__heart-anime {
-    transition: fill 0.2s ease;
-    transform: scale(1);
-  
+    background: linear-gradient(to top, #000 50%, #fff 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: all .35s ease-out;
+
+
+
+
     &:hover {
-      fill: $primary-color;
-      transform: scale(1.2);
+        border: 2px solid limegreen;
+        background-position: bottom;
+        color: #fff;
+
+
+
     }
-  }
+}
 
 // -------------------- Heart Button Animation END --------------------
