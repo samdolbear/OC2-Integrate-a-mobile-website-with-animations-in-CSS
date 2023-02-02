@@ -95,6 +95,9 @@
     background-color: lighten($quaternary-color, 95%);
     height: 70px;
     width: 300px;
+    &-purple {
+        background-color: lighten($primary-color, 30%);
+    }
     // Get rid of box shadow effect
     &:hover,
     &:active {
