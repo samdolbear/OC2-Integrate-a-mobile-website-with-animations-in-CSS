@@ -55,6 +55,7 @@
     @include box-shadow-hover;
     @include non-mobile {
         width: 400px;
+        margin: auto 20px;
     } 
     &__link {
         text-decoration: none;
@@ -106,7 +107,7 @@
     }
     @include non-mobile {
         width: 500px;
-        margin: 25px 20px;
+        // margin: 28px 20px;
     }
 }
 
