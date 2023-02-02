@@ -199,6 +199,20 @@ main {
         }
     }
 }
+
+// Styling for the heart svg's
+.card__heart-container {
+    fill: transparent;
+    stroke: lighten($quaternary-color, 25%);
+    stroke-width: 20;
+    cursor: pointer;
+    margin-right: 30px;
+    svg {
+        overflow: visible;
+        width: 10rem;
+        width: 25px;
+      }
+}
 // -------------------- Restaurant Section END --------------------
 
 // -------------------- Footer START--------------------

@@ -86,8 +86,7 @@
     &__heart-anime {
         color: lighten($quaternary-color, 50%);
         font-size: 25px; 
-        margin-right: 30px;
-        color: aqua;   
+        margin-right: 30px;  
     }
 }
 
@@ -112,23 +111,18 @@
 // -------------------- Cards END --------------------
 
 // -------------------- Heart Button Animation START --------------------
-.card__heart-anime {
-    background: linear-gradient(to top, #000 50%, #fff 50%);
-    background-size: 100% 200%;
-    background-position: top;
-    transition: all .35s ease-out;
+// .card__heart-container {
+//     fill: transparent;
+//     stroke: lighten($quaternary-color, 25%);
+//     stroke-width: 20;
+//     cursor: pointer;
+//     margin-right: 30px;
+//     svg {
+//         overflow: visible;
+//         width: 10rem;
+//         width: 25px;
+//       }
+// }
 
-
-
-
-    &:hover {
-        border: 2px solid limegreen;
-        background-position: bottom;
-        color: #fff;
-
-
-
-    }
-}
 
 // -------------------- Heart Button Animation END --------------------
