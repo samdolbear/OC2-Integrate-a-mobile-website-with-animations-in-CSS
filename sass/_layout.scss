@@ -204,20 +204,6 @@ main {
         }
     }
 }
-
-// Styling for the hearts
-.card__heart-container {
-    margin-right: 30px;
-    font-weight: 100;
-}
-
-.card__heart {
-    font-size: 25px;
-    color: lighten($quaternary-color, 25%);
-    // line-height: 0.8;
-    // font-weight: 100;
-    border: black 1px solid;
-}
 // -------------------- Restaurant Section END --------------------
 
 // -------------------- Footer START--------------------

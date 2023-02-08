@@ -11,9 +11,9 @@
     height: 120px;
     animation: spin 2s cubic-bezier(.7,.09,.28,.94) infinite;
     // Hide the loading animation
-    // &--hide {
-    //     display: none;
-    // }
+    &--hide {
+        display: none;
+    }
   }
 
 @keyframes spin {
