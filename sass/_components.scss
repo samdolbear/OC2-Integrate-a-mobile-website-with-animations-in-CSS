@@ -114,7 +114,7 @@
 // -------------------- Cards END --------------------
 
 // -------------------- Heart Button Animation START --------------------
-.card__heart-container {
+.heart-anime {
     fill: transparent;
     stroke: lighten($quaternary-color, 25%);
     stroke-width: 20;
@@ -125,6 +125,10 @@
         width: 10rem;
         width: 25px;
       }
+    position: relative;
+    left: -100px;
+    top: 70px;
+    z-index: 1;
 }
 
 
@@ -133,22 +137,22 @@
       fill: transparent;
     }
     10% {
-      fill: #9356DC;
+      fill: $primary-color;
     }
     25% {
-      fill: #9356DC;
+      fill: #primary-color;
     }
     50% {
-      fill: #9356DC;
+      fill: #primary-color;
     }
     75% {
-      fill: #9356DC;
+      fill: #primary-color;
     }
     90% {
-      fill: #9356DC;
+      fill: #primary-color;
     }
     100% {
-      fill: #9356DC;
+      fill: #primary-color;
     }
   }
 
