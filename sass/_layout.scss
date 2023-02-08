@@ -222,7 +222,7 @@ main {
             font-weight: bold;
         }
         &--hide {
-            z-index: -99;
+            background-color: transparent;
         }
     }
 }
