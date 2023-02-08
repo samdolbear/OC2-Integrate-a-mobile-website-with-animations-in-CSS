@@ -179,15 +179,15 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding-top: 20px;
-    padding-bottom: 60px;    
+    flex-wrap: wrap;   
     margin-top: 50px;
     background-color: lighten($quaternary-color, 95%);    
     &-title__container {
+        padding-left: 40px;
         @include title;
         width: 300px;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
+        margin-right: 80px;
         @include non-mobile {
             width: fit-content;
         }   
@@ -198,12 +198,57 @@ main {
         align-items: center;
         flex-wrap: wrap;
         max-width: 1100px;
-        margin-left: 75px;
+        margin-top: -20px;
         @include non-mobile {
             gap: 20px;
         }
     }
 }
+
+.extras {
+    position: relative;
+    top: -230px;
+    left: 125px;
+    &__new-label {
+        width: 70px;
+        height: 30px;
+        background-color: $tertiary-color;
+        z-index: 1;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 25px;
+        &--color {
+            color: darken($tertiary-color, 50%);
+            font-weight: bold;
+        }
+        &--hide {
+            z-index: -99;
+        }
+    }
+}
+
+.heart-anime {
+    fill: transparent;
+    stroke: lighten($quaternary-color, 25%);
+    stroke-width: 20;
+    cursor: pointer;
+    svg {
+        overflow: visible;
+        width: 10rem;
+        width: 25px;
+      }
+    position: relative;
+    left: 20px;
+    top: 140px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
 // -------------------- Restaurant Section END --------------------
 
 // -------------------- Footer START--------------------
@@ -212,7 +257,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: lighten($quaternary-color, 30%);
+    background-color: lighten($quaternary-color, 20%);
     @include non-mobile {
         justify-content: center;
         align-items: center;

@@ -48,7 +48,7 @@
 .card {
     border-radius: 15px;
     margin: auto auto;
-    margin-top: 30px;
+    margin-top: -40px;
     overflow: hidden;
     width: 90%;
     @include box-shadow;
@@ -114,24 +114,6 @@
 // -------------------- Cards END --------------------
 
 // -------------------- Heart Button Animation START --------------------
-.heart-anime {
-    fill: transparent;
-    stroke: lighten($quaternary-color, 25%);
-    stroke-width: 20;
-    cursor: pointer;
-    margin-right: 30px;
-    svg {
-        overflow: visible;
-        width: 10rem;
-        width: 25px;
-      }
-    position: relative;
-    left: -100px;
-    top: 70px;
-    z-index: 1;
-}
-
-
 @keyframes animateHeart {
     0% {
       fill: transparent;
