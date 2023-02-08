@@ -1,29 +1,63 @@
 // -------------------- Loading Animation START --------------------
-.loading {
-    margin-top: 30px;
-    border: 16px solid $primary-color; 
-    border-top: 16px solid secondary-color; 
-    border-right: 16px solid transparent; 
-    border-bottom: 16px solid $tertiary-color; 
-    border-left: 16px solid $secondary-color; 
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s cubic-bezier(.7,.09,.28,.94) infinite;
-    // Hide the loading animation
-    &--hide {
-        display: none;
-    }
-  }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    animation: rotate 3s linear 0s infinite;
+    opacity: 1;
+    transition: opacity 3s ease;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
     }
-    100% {
-        transform: rotate(360deg);
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+.loading.fade-out {
+    animation-play-state: paused;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+// .loading {
+//     margin-top: 30px;
+//     border: 10px solid $primary-color; 
+//     border-top: 10px solid secondary-color; 
+//     border-right: 10px solid lighten($quaternary-color, 90); 
+//     border-bottom: 10px solid $tertiary-color; 
+//     border-left: 10px solid $secondary-color; 
+//     border-radius: 50%;
+//     width: 120px;
+//     height: 120px;
+//     animation: spin 3s linear;
+//   }
+
+// @keyframes spin {
+//     0% {
+//         transform: rotate(0deg);
+//     }
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// }
 // -------------------- Loading Animation END --------------------
 
 // -------------------- Buttons START --------------------
@@ -107,7 +141,6 @@
     }
     @include non-mobile {
         width: 500px;
-        // margin: 28px 20px;
     }
 }
 
