@@ -11,9 +11,9 @@
     height: 120px;
     animation: spin 2s cubic-bezier(.7,.09,.28,.94) infinite;
     // Hide the loading animation
-    &--hide {
-        display: none;
-    }
+    // &--hide {
+    //     display: none;
+    // }
   }
 
 @keyframes spin {
@@ -30,7 +30,7 @@
 .button {
     color: #fff;
     font-weight: bold;
-    background: linear-gradient(to bottom right, $secondary-color, $primary-color 70%);
+    background: linear-gradient(to bottom, $secondary-color, $primary-color 95%);
     padding: 16px 25px;   
     border: none;
     border-radius: 50px 50px;
@@ -38,7 +38,7 @@
     @include box-shadow-hover;
     &:hover, 
     &:active {
-        background: linear-gradient(to bottom right, lighten($secondary-color, 2%), lighten($primary-color, 2%) 70%);
+        background: linear-gradient(to bottom, lighten($secondary-color, 2%), lighten($primary-color, 2%) 95%);
     }
 }
 // -------------------- Buttons End --------------------
@@ -50,12 +50,12 @@
     margin: auto auto;
     margin-top: 30px;
     overflow: hidden;
-    width: 320px;
+    width: 90%;
     @include box-shadow;
     @include box-shadow-hover;
     @include non-mobile {
         width: 400px;
-        margin: auto 20px;
+        margin: 20px 20px;
     } 
     &__link {
         text-decoration: none;
@@ -98,7 +98,7 @@
     width: 300px;
     margin: auto 20px;
     &-purple {
-        background-color: lighten($primary-color, 30%);
+        background-color: lighten($primary-color, 35%);
     }
     // Get rid of box shadow effect
     &:hover,
@@ -114,32 +114,47 @@
 // -------------------- Cards END --------------------
 
 // -------------------- Heart Button Animation START --------------------
+.card__heart-container {
+    fill: transparent;
+    stroke: lighten($quaternary-color, 25%);
+    stroke-width: 20;
+    cursor: pointer;
+    margin-right: 30px;
+    svg {
+        overflow: visible;
+        width: 10rem;
+        width: 25px;
+      }
+}
+
+
 @keyframes animateHeart {
     0% {
       fill: transparent;
     }
     10% {
-      fill: $primary-color;
+      fill: #9356DC;
     }
     25% {
-      fill: $primary-color;
+      fill: #9356DC;
     }
     50% {
-      fill: $primary-color;
+      fill: #9356DC;
     }
     75% {
-      fill: $primary-color;
+      fill: #9356DC;
     }
     90% {
-      fill: $primary-color;
+      fill: #9356DC;
     }
     100% {
-      fill: $primary-color;
+      fill: #9356DC;
     }
   }
-  
+
   .card__heart:hover {
     animation: animateHeart 20s ease-in-out;
   }
+
 
 // -------------------- Heart Button Animation END --------------------
