@@ -118,10 +118,6 @@
     }
 }
 
-
-
-
-
 // How Card Modifiers
 .card--how {
     background-color: lighten($quaternary-color, 95%);
@@ -140,6 +136,27 @@
         width: 500px;
     }
 }
+
+//Menu Cards
+.card {
+    &--menu{
+
+    }
+    &-info--menu {
+
+    }
+    &__title--menu {
+
+    }
+    &__text--menu {
+
+    }
+    &__text-price {
+        
+    }
+}
+
+
 
 // -------------------- Cards END --------------------
 
