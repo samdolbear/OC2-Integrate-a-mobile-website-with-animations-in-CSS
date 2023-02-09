@@ -324,10 +324,10 @@ main {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     margin-top: -40px;
-    // width: 100%;
+    width: 100%;
     // Depending on looks may not use it
     &--limit {
-        max-width: 100%;
+        width: 90%;
     }
 }
 
@@ -338,7 +338,7 @@ main {
 }
 
 .title--menu {
-    
+
 }
 
 
