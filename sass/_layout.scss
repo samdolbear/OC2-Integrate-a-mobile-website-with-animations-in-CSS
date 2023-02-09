@@ -316,7 +316,27 @@ main {
 
 // -------------------- Menu Container (menu-ctn) START -------------------
 
+// Menu Container
+.menu-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lighten($quaternary-color, 90%);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -40px;
+    // Depending on looks may not use it
+    &--limit {
+        max-width: 100%;
+    }
+}
 
+.menu__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 
 
