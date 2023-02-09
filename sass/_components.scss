@@ -1,39 +1,31 @@
 // -------------------- Loading Animation START --------------------
 
-.loading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
-    animation: rotate 3s linear 0s infinite;
-    opacity: 1;
-    transition: opacity 3s ease;
-}
+// .loading {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     width: 100px;
+//     height: 100px;
+//     animation: rotate 3s linear 0s infinite;
+//     opacity: 1;
+//     transition: opacity 3s ease;
+// }
 
-@keyframes rotate {
-    from {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
+// @keyframes rotate {
+//     from {
+//         transform: translate(-50%, -50%) rotate(0deg);
+//     }
 
-    to {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
+//     to {
+//         transform: translate(-50%, -50%) rotate(360deg);
+//     }
+// }
 
-.loading.fade-out {
-    animation-play-state: paused;
-    opacity: 0;
-}
-
-
-
-
-
-
-
-
+// .loading.fade-out {
+//     animation-play-state: paused;
+//     opacity: 0;
+// }
 
 
 
@@ -155,19 +147,19 @@
       fill: $primary-color;
     }
     25% {
-      fill: #primary-color;
+      fill: $primary-color;
     }
     50% {
-      fill: #primary-color;
+      fill: $primary-color;
     }
     75% {
-      fill: #primary-color;
+      fill: $primary-color;
     }
     90% {
-      fill: #primary-color;
+      fill: $primary-color;
     }
     100% {
-      fill: #primary-color;
+      fill: $primary-color;
     }
   }
 

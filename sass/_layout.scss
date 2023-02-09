@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 // -------------------- Fonts END --------------------
 
 // -------------------- LAYOUT START --------------------
-body {
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,7 +181,8 @@ main {
     align-items: center;
     flex-wrap: wrap;   
     margin-top: 50px;
-    background-color: lighten($quaternary-color, 95%);    
+    background-color: lighten($quaternary-color, 95%);
+    width: 100%;    
     &-title__container {
         padding-left: 40px;
         @include title;
