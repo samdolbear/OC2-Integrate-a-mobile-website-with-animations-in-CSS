@@ -77,6 +77,9 @@ main {
     gap: 50px;
     align-items: center;
     padding-left: 30px;
+    @include non-mobile {
+        justify-content: space-between;
+    } 
 }
 
 .logo__homeLink {
@@ -296,9 +299,9 @@ main {
 }
 // -------------------- Footer END --------------------
 
-// |||||||||||||||||||| Menu Page scss END |||||||||||||||||||
+// |||||||||||||||||||| Majority of Menu Page layout |||||||||||||||||||
 
-// -------------------- Menu Section START --------------------
+// -------------------- Menu Image START --------------------
 .menu {
     width: 100%;
     &__image {
@@ -309,9 +312,18 @@ main {
         } 
     }
 }
+// -------------------- Menu Image END --------------------
+
+// -------------------- Menu Container (menu-ctn) START -------------------
 
 
 
+
+
+
+
+
+// -------------------- Menu Container (menu-ctn) END --------------------
 
 
 

@@ -1,88 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="./public/images/favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./public/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
 
     <!-- Or prefix path? -->
-    <link rel="stylesheet" href="./public/css/styles.css"> 
+    <link rel="stylesheet" href="./public/css/styles.css" />
 
     <title>Bastille</title>
-</head>
+  </head>
 
-<!-- Page container -->
-<body>
-
+  <!-- Page container -->
+  <body>
     <!-- logo this time with back button -->
     <header class="header header--menu">
-        <div class="logo logo--menu">
-            <!-- Accessability -->
-            <h1 class="logo__heading">ohmyfood</h1>
-            <a href="./index.html" class="logo__homeLink"><i class="fa-solid fa-arrow-left logo__homeLink"></i></a>
-            <img class="logo__image" src="./public/images/logo/ohmyfood@2x.svg" alt="ohmyfood logo">  
-        </div>
+      <div class="logo logo--menu">
+        <!-- Accessability -->
+        <h1 class="logo__heading">ohmyfood</h1>
+        <a href="./index.html" class="logo__homeLink"
+          ><i class="fa-solid fa-arrow-left logo__homeLink"></i
+        ></a>
+        <img
+          class="logo__image"
+          src="./public/images/logo/ohmyfood@2x.svg"
+          alt="ohmyfood logo"
+        />
+        <!-- Extra div so that justify-content: space-between; works with the non mobile breakpoint -->
+        <div></div>
+      </div>
     </header>
-   
+
     <!-- Loading animation -->
     <div class="loading loading--hide"></div>
 
     <!-- Content container -->
     <main>
-        <!-- Image -->
-        <section class="menu">
-            <img
-                  class="menu__image"
-                  src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                  alt="Bastille dish"
-                />
-        </section>
-        <!-- Main menu card containing header, heart and all the cards -->
-        <section></section>
+      <!-- Image -->
+      <section class="menu">
+        <img
+          class="menu__image"
+          src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          alt="Bastille dish"
+        />
+      </section>
+      <!-- Main menu card containing header, heart and all the cards -->
+      <section class="menu-ctn">
+        <div class="entrees"></div>
+        <div class="main-dish"></div>
+        <div class="dessert"></div>
+        <button></button>
+
+      </section>
     </main>
 
     <!-- footer -->
     <footer class="footer">
-        <a class="footer__link-home" href="#home">
-            <img class="footer__logo" src="./public/images/logo/ohmyfood@2x.svg" alt="ohmyfood logo">
-        </a>
-        <ul class="footer__list">
-            <li class="footer__list-item">                 
-                <a class="footer__link" href="#">
-                    <i class="fa-solid fa-utensils footer__icon"></i>
-                    <span class="footer__link--color">
-                        Suggest a restaurant
-                    </span>
-                </a> 
-            </li>
-            <li class="footer__list-item"> 
-                <a class="footer__link" href="#">
-                    <i class="fa-solid fa-handshake-angle footer__icon"></i>
-                    <span class="footer__link--color">
-                        Become a partner
-                    </span>
-                </a> 
-            </li>
-            <li class="footer__list-item"> 
-                <a class="footer__link" href="#">
-                    <span class="footer__link--color">
-                        Legal
-                    </span>
-                </a> 
-            </li>
-            <li class="footer__list-item"> 
-                <a class="footer__link" href="#">
-                    <span class="footer__link--color">
-                        Contact
-                    </span>
-                </a> 
-            </li>
-        </ul>
+      <a class="footer__link-home" href="#home">
+        <img
+          class="footer__logo"
+          src="./public/images/logo/ohmyfood@2x.svg"
+          alt="ohmyfood logo"
+        />
+      </a>
+      <ul class="footer__list">
+        <li class="footer__list-item">
+          <a class="footer__link" href="#">
+            <i class="fa-solid fa-utensils footer__icon"></i>
+            <span class="footer__link--color"> Suggest a restaurant </span>
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__link" href="#">
+            <i class="fa-solid fa-handshake-angle footer__icon"></i>
+            <span class="footer__link--color"> Become a partner </span>
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__link" href="#">
+            <span class="footer__link--color"> Legal </span>
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__link" href="#">
+            <span class="footer__link--color"> Contact </span>
+          </a>
+        </li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>
