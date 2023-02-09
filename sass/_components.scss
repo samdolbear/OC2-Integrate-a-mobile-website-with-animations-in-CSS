@@ -76,6 +76,7 @@
     margin: auto auto;
     overflow: hidden;
     width: 90%;
+    margin-bottom: 20px;
     @include box-shadow;
     @include box-shadow-hover;
     @include non-mobile {

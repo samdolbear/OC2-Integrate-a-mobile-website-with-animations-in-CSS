@@ -182,7 +182,8 @@ main {
     flex-wrap: wrap;   
     margin-top: 50px;
     background-color: lighten($quaternary-color, 95%);
-    width: 100%;    
+    width: 100%;  
+    padding-bottom: 30px;  
     &-title__container {
         padding-left: 40px;
         @include title;
@@ -219,9 +220,6 @@ main {
     &--color {
         color: darken($tertiary-color, 50%);
         font-weight: bold;
-    }
-    &--hide {
-        background-color: transparent;
     }
 }
 
