@@ -187,7 +187,6 @@ main {
         padding-left: 40px;
         @include title;
         width: 300px;
-        margin-bottom: 60px;
         margin-right: 80px;
         @include non-mobile {
             width: fit-content;
@@ -206,42 +205,41 @@ main {
     }
 }
 
-.extras {
+// Restaurants new and heart
+
+.card__new {
+    width: 70px;
+    height: 30px;
+    background-color: $tertiary-color;
+    z-index: 1;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 25px;
     position: relative;
-    top: -230px;
-    left: 125px;
-    &__new-label {
-        width: 70px;
-        height: 30px;
-        background-color: $tertiary-color;
-        z-index: 1;
-        border-radius: 4px;
-        text-align: center;
-        line-height: 25px;
-        &--color {
-            color: darken($tertiary-color, 50%);
-            font-weight: bold;
-        }
-        &--hide {
-            background-color: transparent;
-        }
+    top: -170px;
+    left: 110px;
+    &--color {
+        color: darken($tertiary-color, 50%);
+        font-weight: bold;
+    }
+    &--hide {
+        background-color: transparent;
     }
 }
+
 
 .heart-anime {
     fill: transparent;
     stroke: lighten($quaternary-color, 25%);
     stroke-width: 20;
+    z-index: 1;
+    margin-right: 40px;
     cursor: pointer;
     svg {
         overflow: visible;
         width: 10rem;
         width: 25px;
       }
-    position: relative;
-    left: 20px;
-    top: 140px;
-    z-index: 1;
 }
 
 
