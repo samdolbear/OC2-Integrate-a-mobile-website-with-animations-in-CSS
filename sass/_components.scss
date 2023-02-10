@@ -202,7 +202,7 @@
 
 // -------------------- Heart Button Animation END --------------------
 
-// -------------------- Load Menu Cards Animation Start --------------------
+// -------------------- Load Menu Cards Animation START --------------------
 
 @mixin load-cards ($duration, $delay) {
   animation-name: load;
@@ -216,3 +216,5 @@
   0%{opacity: 0;}
   100%{opacity: 1;}
 }
+
+// -------------------- Load Menu Cards Animation END --------------------

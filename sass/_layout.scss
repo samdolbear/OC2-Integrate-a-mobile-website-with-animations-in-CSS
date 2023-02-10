@@ -370,10 +370,31 @@ main {
     font-weight: 300;
 }
 
-
-
-
 // -------------------- Menu Container Section (menu-ctn) END --------------------
+
+// -------------------- Load Menu Cards START --------------------
+
+.card--menu {
+    opacity: 0;
+}
+
+.card-ctn :nth-child(2) {
+    @include load-cards (1s, 0.5s);
+}
+
+.card-ctn :nth-child(3) {
+    @include load-cards (1s, 1s);
+}
+
+.card-ctn :nth-child(4) {
+    @include load-cards (1s, 1.5s);
+}
+
+
+
+
+// -------------------- Load Menu Cards END --------------------
+
 
 
 
