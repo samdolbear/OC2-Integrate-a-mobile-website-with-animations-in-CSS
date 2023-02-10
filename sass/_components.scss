@@ -150,16 +150,19 @@
       }
     }
     &-info--menu {
-
+      margin: 20px;
     }
     &__title--menu {
-
+      
     }
     &__text--menu {
-
+      font-size: 15px;
+      font-weight: 300;
+      display: flex;
+      justify-content: space-between;
     }
     &__text-price {
-
+      font-weight: bold;
     }
 }
 
