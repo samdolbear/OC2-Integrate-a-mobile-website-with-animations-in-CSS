@@ -325,10 +325,6 @@ main {
     border-top-right-radius: 40px;
     margin-top: -40px;
     width: 100%;
-    // Depending on looks may not use it
-    &--limit {
-        width: 90%;
-    }
 }
 
 .menu__title {
@@ -337,6 +333,11 @@ main {
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
+    @include non-mobile {
+        width: 500px;
+        justify-content: center;
+        gap: 350px;
+    }
 }
 
 .card-ctn {
