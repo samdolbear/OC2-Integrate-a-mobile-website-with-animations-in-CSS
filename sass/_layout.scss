@@ -312,7 +312,7 @@ main {
 }
 // -------------------- Menu Image END --------------------
 
-// -------------------- Menu Container (menu-ctn) START -------------------
+// -------------------- Menu Container (menu-ctn) Section START -------------------
 
 // Menu Container
 .menu-ctn {
@@ -339,6 +339,27 @@ main {
     padding-left: 20px;
 }
 
+.card-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-tile-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    @include non-mobile {
+        width: 500px;
+    } 
+    &__underline {
+        @include underline;
+    }
+}
+
 .title--menu {
 
 }
@@ -346,7 +367,9 @@ main {
 
 
 
-// -------------------- Menu Container (menu-ctn) END --------------------
+// -------------------- Menu Container Section (menu-ctn) END --------------------
+
+
 
 
 

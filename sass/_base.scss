@@ -53,4 +53,14 @@ html {
     }
 }
 
+@mixin underline {
+  height: 5px;
+  width: 40px;
+  background-color: #99E2D0;
+  border-color: #99E2D0;
+  border-radius: 5px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
 // -------------------- Mixins END --------------------

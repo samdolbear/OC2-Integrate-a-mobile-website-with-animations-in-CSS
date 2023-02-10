@@ -137,10 +137,12 @@
     }
 }
 
-//Menu Cards
+// Menu Cards
 .card {
     &--menu{
-        // width: 90%;
+      @include non-mobile {
+        width: 500px;
+    }
     }
     &-info--menu {
 
