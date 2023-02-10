@@ -334,6 +334,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
+    width: 90%;
     @include non-mobile {
         width: 500px;
         justify-content: center;
