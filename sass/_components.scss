@@ -67,6 +67,11 @@
         background: linear-gradient(to bottom, lighten($secondary-color, 2%), lighten($primary-color, 2%) 95%);
     }
 }
+
+.button--order {
+  padding: 15px 80px;
+}
+
 // -------------------- Buttons End --------------------
 
 // -------------------- Cards START --------------------
@@ -142,7 +147,7 @@
     &--menu{
       @include non-mobile {
         width: 500px;
-    }
+      }
     }
     &-info--menu {
 
