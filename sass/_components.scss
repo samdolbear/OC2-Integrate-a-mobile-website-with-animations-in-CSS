@@ -1,62 +1,60 @@
 // -------------------- Loading Animation START --------------------
-// .loading {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   height: 0vh;
-//   opacity: 0;
-//   animation: loading 3s;
-// }
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0vh;
+  opacity: 0;
+  animation: loading 3s;
+}
 
-// @keyframes loading {
-//   0% {
-//     opacity: 1;
-//     height: 80vh;
-//   }
-//   100% {
-//     opacity: 1;
-//     height: 80vh;
-//   }
-// }
+@keyframes loading {
+  0% {
+    opacity: 1;
+    height: 80vh;
+  }
+  100% {
+    opacity: 1;
+    height: 80vh;
+  }
+}
 
-// .loading__spinner {
-//     border: 10px solid $primary-color; 
-//     border-top: 10px solid secondary-color; 
-//     border-right: 10px solid lighten($quaternary-color, 90); 
-//     border-bottom: 10px solid $tertiary-color; 
-//     border-left: 10px solid $secondary-color; 
-//     border-radius: 50%;
-//     width: 200px;
-//     height: 200px;
-//     animation: loading__spinner 3s cubic-bezier(.25,.1,.25,1);
-// }
+.loading__spinner {
+    border: 10px solid $primary-color; 
+    border-top: 10px solid secondary-color; 
+    border-right: 10px solid lighten($quaternary-color, 90); 
+    border-bottom: 10px solid $tertiary-color; 
+    border-left: 10px solid $secondary-color; 
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    animation: loading__spinner 3s cubic-bezier(.25,.1,.25,1);
+}
 
-// @keyframes loading__spinner {
-//     0% {
-//       transform: rotate(0deg);
-//     }
-//     100% {
-//       transform: rotate(360deg*3);
-//     }
-// }
+@keyframes loading__spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg*3);
+    }
+}
 
-// .content {
-//   opacity: 1;
-//   animation: page-load 3s;
-// }
+.content {
+  opacity: 1;
+  animation: page-load 3s;
+}
 
-// @keyframes page-load {
-//   0% {
-//     opacity: 0;
-//     visibility: collapse;
-//   }
-//   100% {
-//     opacity: 0;
-//     visibility: collapse;
-//   }
-// }
-
-
+@keyframes page-load {
+  0% {
+    opacity: 0;
+    visibility: collapse;
+  }
+  100% {
+    opacity: 0;
+    visibility: collapse;
+  }
+}
 // -------------------- Loading Animation END --------------------
 
 // -------------------- Buttons START --------------------
@@ -78,7 +76,6 @@
 .button--order {
   padding: 15px 80px;
 }
-
 // -------------------- Buttons End --------------------
 
 // -------------------- Cards START --------------------
@@ -177,9 +174,6 @@
         @include box-shadow;
     }
 }
-
-
-
 // -------------------- Cards END --------------------
 
 // -------------------- Heart Button Animation START --------------------
@@ -210,39 +204,61 @@
   .card__heart:hover {
     animation: animateHeart 20s ease-in-out;
   }
-
-
 // -------------------- Heart Button Animation END --------------------
 
 // -------------------- Load Menu Cards Animation START --------------------
-.card--menu {
-  opacity: 0;
-}
+// .card--menu {
+//   opacity: 0;
+// }
 
-.card-ctn :nth-child(2) {
-  @include load-cards (1s, 0.5s);
-}
+// .card-ctn :nth-child(2) {
+//   @include load-cards (1s, 0.5s);
+// }
 
-.card-ctn :nth-child(3) {
-  @include load-cards (1s, 1s);
-}
+// .card-ctn :nth-child(3) {
+//   @include load-cards (1s, 1s);
+// }
 
-.card-ctn :nth-child(4) {
-  @include load-cards (1s, 1.5s);
-}
+// .card-ctn :nth-child(4) {
+//   @include load-cards (1s, 1.5s);
+// }
 
-@keyframes load {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
+// @keyframes load {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
 // -------------------- Load Menu Cards Animation END --------------------
 
 // -------------------- Menu Card Checkmark Animation START --------------------
+.truncate-ctn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  min-width: 0;
+  cursor: pointer;
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.checkmark-anime {
+  align-self: center;
+  width: 0;
+  overflow: hidden;
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
 
 
 // -------------------- Menu Card Checkmark Animation END --------------------
