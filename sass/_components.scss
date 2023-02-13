@@ -210,15 +210,6 @@
 // -------------------- Heart Button Animation END --------------------
 
 // -------------------- Load Menu Cards Animation START --------------------
-
-@mixin load-cards ($duration, $delay) {
-  animation-name: load;
-  animation-duration: $duration;
-  animation-timing-function: linear;
-  animation-delay: $delay;
-  animation-fill-mode: forwards;
-}
-
 @keyframes load {
   0% {
     opacity: 0;

@@ -63,4 +63,13 @@ html {
   margin-bottom: 20px;
 }
 
+// Load Cards Animation Function
+@mixin load-cards ($duration, $delay) {
+  animation-name: load;
+  animation-duration: $duration;
+  animation-timing-function: linear;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
+}
+
 // -------------------- Mixins END --------------------
