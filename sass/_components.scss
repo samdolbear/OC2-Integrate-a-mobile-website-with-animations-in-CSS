@@ -150,6 +150,7 @@
 // Menu Cards
 .card {
     &--menu{
+      width: 90%;
       @include non-mobile {
         width: 500px;
       }
@@ -168,6 +169,9 @@
     }
     &__text-price {
       font-weight: bold;
+      align-self: flex-end;
+      position: relative;
+      top: -20px;
     }
     &:hover,
     &:active {
@@ -234,15 +238,17 @@
 // -------------------- Load Menu Cards Animation END --------------------
 
 // -------------------- Menu Card Checkmark Animation START --------------------
-.truncate-ctn {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  flex: 1;
-  min-width: 0;
-  cursor: pointer;
-  p {
+.card {
+  &--menu{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    max-height: 80px;
+  }
+  &-info--menu {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -250,15 +256,17 @@
 }
 
 .checkmark-anime {
-  align-self: center;
-  width: 0;
-  overflow: hidden;
+  background-color: $tertiary-color;
+  height: 122px;
+  width: 80px;
   display: flex;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
+  // visibility: hidden;
+  &--icon {
+    font-size: 40px;
+    color: #fff;
+  }
 }
-
-
-
 
 // -------------------- Menu Card Checkmark Animation END --------------------
