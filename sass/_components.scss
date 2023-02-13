@@ -3,7 +3,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 0vh;
+  opacity: 0;
+  animation: loading 3s;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+    height: 100vh;
+  }
+  100% {
+    opacity: 1;
+    height: 100vh;
+  }
 }
 
 .loading__spinner {
@@ -15,27 +28,25 @@
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    animation: loading 3s cubic-bezier(.25,.1,.25,1);
-    
-    
+    animation: loading__spinner 3s cubic-bezier(.25,.1,.25,1);
 }
 
-@keyframes loading {
+@keyframes loading__spinner {
     0% {
       transform: rotate(0deg);
     }
     100% {
       transform: rotate(360deg*3);
-      
     }
 }
 
+
+
 .content {
-  visibility: collapse;
+  // visibility: collapse;
 }
 
 @keyframes page-load {
-  
 }
 
 
