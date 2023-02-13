@@ -220,8 +220,17 @@
 }
 
 @keyframes load {
-  0%{opacity: 0;}
-  100%{opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 // -------------------- Load Menu Cards Animation END --------------------
+
+// -------------------- Menu Card Checkmark Animation START --------------------
+
+
+// -------------------- Menu Card Checkmark Animation END --------------------
