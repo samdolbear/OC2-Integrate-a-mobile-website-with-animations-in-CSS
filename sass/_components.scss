@@ -40,13 +40,20 @@
     }
 }
 
-
-
 .content {
-  // visibility: collapse;
+  opacity: 1;
+  animation: page-load 3s;
 }
 
 @keyframes page-load {
+  0% {
+    opacity: 0;
+    visibility: collapse;
+  }
+  100% {
+    opacity: 0;
+    visibility: collapse;
+  }
 }
 
 
