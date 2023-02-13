@@ -1,55 +1,37 @@
 // -------------------- Loading Animation START --------------------
 
-// .loading {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     width: 100px;
-//     height: 100px;
-//     animation: rotate 3s linear 0s infinite;
-//     opacity: 1;
-//     transition: opacity 3s ease;
-// }
+.loading {
+    margin-top: 30px;
+    border: 10px solid $primary-color; 
+    border-top: 10px solid secondary-color; 
+    border-right: 10px solid lighten($quaternary-color, 90); 
+    border-bottom: 10px solid $tertiary-color; 
+    border-left: 10px solid $secondary-color; 
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    animation: loading 3s cubic-bezier(.25,.1,.25,1);
+}
 
-// @keyframes rotate {
-//     from {
-//         transform: translate(-50%, -50%) rotate(0deg);
-//     }
+@keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg*3);
+      
+    }
+}
 
-//     to {
-//         transform: translate(-50%, -50%) rotate(360deg);
-//     }
-// }
+.content {
+  
+}
 
-// .loading.fade-out {
-//     animation-play-state: paused;
-//     opacity: 0;
-// }
+@keyframes page-load {
+  
+}
 
 
-
-// .loading {
-//     margin-top: 30px;
-//     border: 10px solid $primary-color; 
-//     border-top: 10px solid secondary-color; 
-//     border-right: 10px solid lighten($quaternary-color, 90); 
-//     border-bottom: 10px solid $tertiary-color; 
-//     border-left: 10px solid $secondary-color; 
-//     border-radius: 50%;
-//     width: 120px;
-//     height: 120px;
-//     animation: spin 3s linear;
-//   }
-
-// @keyframes spin {
-//     0% {
-//         transform: rotate(0deg);
-//     }
-//     100% {
-//         transform: rotate(360deg);
-//     }
-// }
 // -------------------- Loading Animation END --------------------
 
 // -------------------- Buttons START --------------------
