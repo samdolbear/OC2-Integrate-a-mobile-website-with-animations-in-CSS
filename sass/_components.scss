@@ -1,60 +1,60 @@
 // -------------------- Loading Animation START --------------------
-.loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 0vh;
-  opacity: 0;
-  animation: loading 3s;
-}
+// .loading {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 0vh;
+//   opacity: 0;
+//   animation: loading 3s;
+// }
 
-@keyframes loading {
-  0% {
-    opacity: 1;
-    height: 100vh;
-  }
-  100% {
-    opacity: 1;
-    height: 100vh;
-  }
-}
+// @keyframes loading {
+//   0% {
+//     opacity: 1;
+//     height: 80vh;
+//   }
+//   100% {
+//     opacity: 1;
+//     height: 80vh;
+//   }
+// }
 
-.loading__spinner {
-    border: 10px solid $primary-color; 
-    border-top: 10px solid secondary-color; 
-    border-right: 10px solid lighten($quaternary-color, 90); 
-    border-bottom: 10px solid $tertiary-color; 
-    border-left: 10px solid $secondary-color; 
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    animation: loading__spinner 3s cubic-bezier(.25,.1,.25,1);
-}
+// .loading__spinner {
+//     border: 10px solid $primary-color; 
+//     border-top: 10px solid secondary-color; 
+//     border-right: 10px solid lighten($quaternary-color, 90); 
+//     border-bottom: 10px solid $tertiary-color; 
+//     border-left: 10px solid $secondary-color; 
+//     border-radius: 50%;
+//     width: 200px;
+//     height: 200px;
+//     animation: loading__spinner 3s cubic-bezier(.25,.1,.25,1);
+// }
 
-@keyframes loading__spinner {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg*3);
-    }
-}
+// @keyframes loading__spinner {
+//     0% {
+//       transform: rotate(0deg);
+//     }
+//     100% {
+//       transform: rotate(360deg*3);
+//     }
+// }
 
-.content {
-  opacity: 1;
-  animation: page-load 3s;
-}
+// .content {
+//   opacity: 1;
+//   animation: page-load 3s;
+// }
 
-@keyframes page-load {
-  0% {
-    opacity: 0;
-    visibility: collapse;
-  }
-  100% {
-    opacity: 0;
-    visibility: collapse;
-  }
-}
+// @keyframes page-load {
+//   0% {
+//     opacity: 0;
+//     visibility: collapse;
+//   }
+//   100% {
+//     opacity: 0;
+//     visibility: collapse;
+//   }
+// }
 
 
 // -------------------- Loading Animation END --------------------
@@ -87,7 +87,7 @@
     border-radius: 15px;
     margin: auto auto;
     overflow: hidden;
-    width: 90%;
+    width: 340px;
     margin-bottom: 20px;
     @include box-shadow;
     @include box-shadow-hover;
@@ -111,6 +111,7 @@
         align-items: center;
         justify-content: space-between;
         margin-left: 20px;
+        position: relative;
     }
     &__title {
         @include title;
@@ -171,6 +172,10 @@
     &__text-price {
       font-weight: bold;
     }
+    &:hover,
+    &:active {
+        @include box-shadow;
+    }
 }
 
 
@@ -210,6 +215,22 @@
 // -------------------- Heart Button Animation END --------------------
 
 // -------------------- Load Menu Cards Animation START --------------------
+.card--menu {
+  opacity: 0;
+}
+
+.card-ctn :nth-child(2) {
+  @include load-cards (1s, 0.5s);
+}
+
+.card-ctn :nth-child(3) {
+  @include load-cards (1s, 1s);
+}
+
+.card-ctn :nth-child(4) {
+  @include load-cards (1s, 1.5s);
+}
+
 @keyframes load {
   0% {
     opacity: 0;

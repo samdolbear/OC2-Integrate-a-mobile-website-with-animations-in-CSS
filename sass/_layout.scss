@@ -219,7 +219,10 @@ main {
     line-height: 25px;
     position: relative;
     top: -170px;
-    left: 110px;
+    left: 85px;
+    @include non-mobile {
+        left: 110px;
+    }
     &--color {
         color: darken($tertiary-color, 50%);
         font-weight: bold;
@@ -374,21 +377,7 @@ main {
 
 // -------------------- Load Menu Cards START --------------------
 
-.card--menu {
-    opacity: 0;
-}
 
-.card-ctn :nth-child(2) {
-    @include load-cards (1s, 0.5s);
-}
-
-.card-ctn :nth-child(3) {
-    @include load-cards (1s, 1s);
-}
-
-.card-ctn :nth-child(4) {
-    @include load-cards (1s, 1.5s);
-}
 
 
 
