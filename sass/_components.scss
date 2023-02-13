@@ -1,7 +1,12 @@
 // -------------------- Loading Animation START --------------------
-
 .loading {
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading__spinner {
     border: 10px solid $primary-color; 
     border-top: 10px solid secondary-color; 
     border-right: 10px solid lighten($quaternary-color, 90); 
@@ -11,6 +16,8 @@
     width: 200px;
     height: 200px;
     animation: loading 3s cubic-bezier(.25,.1,.25,1);
+    
+    
 }
 
 @keyframes loading {
