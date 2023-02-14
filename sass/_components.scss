@@ -224,30 +224,30 @@
 // -------------------- Heart Button Animation END --------------------
 
 // -------------------- Load Menu Cards Animation START --------------------
-// .card--menu {
-//   opacity: 0;
-// }
+.card--menu {
+  opacity: 0;
+}
 
-// .card-ctn :nth-child(2) {
-//   @include load-cards (1s, 0.5s);
-// }
+.card-ctn :nth-child(2) {
+  @include load-cards (1s, 0.5s);
+}
 
-// .card-ctn :nth-child(3) {
-//   @include load-cards (1s, 1s);
-// }
+.card-ctn :nth-child(3) {
+  @include load-cards (1s, 1s);
+}
 
-// .card-ctn :nth-child(4) {
-//   @include load-cards (1s, 1.5s);
-// }
+.card-ctn :nth-child(4) {
+  @include load-cards (1s, 1.5s);
+}
 
-// @keyframes load {
-//   0% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 // -------------------- Load Menu Cards Animation END --------------------
 
 // -------------------- Menu Card Checkmark Animation START --------------------
