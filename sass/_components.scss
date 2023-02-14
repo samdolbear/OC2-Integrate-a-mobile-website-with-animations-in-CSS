@@ -151,27 +151,42 @@
 .card {
     &--menu{
       width: 90%;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+
+
       @include non-mobile {
         width: 500px;
       }
     }
     &-info--menu {
-      margin: 20px;
+      width: 100%;
+      margin-top: 15px;
+      margin-left: 15px;
     }
     &__title--menu {
-      
+      margin:0;
+    }
+    &__descr {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      min-width: 0;
+      align-items: center;
+      width: 100%;
+      margin-top: -4px;
     }
     &__text--menu {
       font-size: 15px;
       font-weight: 300;
-      display: flex;
-      justify-content: space-between;
+      align-self: center;
+      margin: 0;
     }
     &__text-price {
       font-weight: bold;
-      // align-self: flex-end;
-      // position: relative;
-      // top: -20px;
+      margin-right: 15px;
+
     }
     &:hover,
     &:active {
@@ -238,35 +253,37 @@
 // -------------------- Load Menu Cards Animation END --------------------
 
 // -------------------- Menu Card Checkmark Animation START --------------------
-.card {
-  &--menu{
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1;
-    min-width: 0;
-    max-height: 80px;
-  }
-  &-info--menu {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
+// .card {
+//   &--menu{
+//     overflow: hidden;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     flex: 1;
+//     min-width: 0;
+//     max-height: 80px;
+//   }
+//   &-info--menu {
+//     white-space: nowrap;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     width: 100%;
+//   }
+// }
 
-.checkmark-anime {
-  background-color: $tertiary-color;
-  height: 122px;
-  width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  // visibility: hidden;
-  &--icon {
-    font-size: 40px;
-    color: #fff;
-  }
-}
+// .checkmark-anime {
+//   background-color: $tertiary-color;
+//   height: 122px;
+//   width: 80px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   // visibility: hidden;
+//   display: none;
+//   &--icon {
+//     font-size: 40px;
+//     color: #fff;
+//   }
+// }
 
 // -------------------- Menu Card Checkmark Animation END --------------------
