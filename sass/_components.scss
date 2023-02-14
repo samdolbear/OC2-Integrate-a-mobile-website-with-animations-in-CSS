@@ -273,12 +273,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // visibility: hidden;
-  // display: none;
   &--icon {
     font-size: 30px;
     color: #fff;
-    z-index: -1;
+    overflow: hidden;
   }
 }
 
@@ -294,11 +292,9 @@
 @keyframes checkmark-rotate {
   0% {
     transform: rotate(-360deg*1.5);
-    z-index: 1;
   }
   100% {
     transform: rotate(0deg);
-    z-index: 1;
   }
 }
 
@@ -310,10 +306,8 @@
       &--icon {
         animation: checkmark-rotate 1.5s;
         animation-fill-mode: forwards;
-        // animation-delay: 0.2s;
       }
     }
   }
 }
-
 // -------------------- Menu Card Checkmark Animation END --------------------
