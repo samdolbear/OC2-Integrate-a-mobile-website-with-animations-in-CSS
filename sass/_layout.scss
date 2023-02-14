@@ -41,7 +41,7 @@ main {
         display: none;
     }
     &__image {
-        width: 130px;
+        width: 180px;
         height: auto;
         margin-top: 20px;
         margin-left: 15px;
@@ -74,18 +74,22 @@ main {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    gap: 50px;
     align-items: center;
-    padding-left: 30px;
+    margin-left: -15px;
+    justify-content: space-between;
     @include non-mobile {
-        justify-content: space-between;
+        margin-left: -35px;
     } 
 }
 
 .logo__homeLink {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 25px;
+    margin-left: 15px;
     color: lighten($quaternary-color, 10%);
+    @include non-mobile {
+        margin-left: 35px;
+    } 
     &:hover,
     &:active {
         color: lighten($quaternary-color, 30%);
