@@ -271,19 +271,19 @@
 //   }
 // }
 
-// .checkmark-anime {
-//   background-color: $tertiary-color;
-//   height: 122px;
-//   width: 80px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   // visibility: hidden;
-//   display: none;
-//   &--icon {
-//     font-size: 40px;
-//     color: #fff;
-//   }
-// }
+.checkmark-anime {
+  background-color: $tertiary-color;
+  height: 100%;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // visibility: hidden;
+  // display: none;
+  &--icon {
+    font-size: 30px;
+    color: #fff;
+  }
+}
 
 // -------------------- Menu Card Checkmark Animation END --------------------
