@@ -274,10 +274,38 @@
   align-items: center;
   justify-content: center;
   // visibility: hidden;
-  display: none;
+  // display: none;
   &--icon {
     font-size: 30px;
     color: #fff;
+  }
+}
+
+@keyframes checkmark {
+  0% {
+    
+  }
+  100% {
+    
+  }
+}
+
+@keyframes checkmark-rotate {
+  0% {
+    transform: rotate(-360deg*1.5);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.card--menu {
+  &:hover {
+    .checkmark-anime {
+      &--icon {
+        animation: checkmark-rotate 1s;
+      }
+    }
   }
 }
 
