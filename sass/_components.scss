@@ -241,6 +241,10 @@
   @include load-cards (1s, 1.5s);
 }
 
+.card-ctn :nth-child(5) {
+  @include load-cards (1s, 2s);
+}
+
 @keyframes load {
   0% {
     opacity: 0;

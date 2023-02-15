@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./public/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!-- Or prefix path? -->
+    <link rel="stylesheet" href="./public/css/styles.css" />
+
+    <title>Le Gourmand</title>
+  </head>
+
+  <!-- Page container -->
+  <body>
+    <!-- logo this time with back button -->
+    <header class="header header--menu">
+      <div class="logo logo--menu">
+        <!-- Accessability -->
+        <h1 class="logo__heading">ohmyfood</h1>
+        <a href="./index.html" class="logo__homeLink"
+          ><i class="fa-solid fa-arrow-left logo__homeLink"></i
+        ></a>
+        <img
+          id="home"
+          class="logo__image"
+          src="./public/images/logo/ohmyfood@2x.svg"
+          alt="ohmyfood logo"
+        />
+        <!-- Extra div so that justify-content: space-between; works with the non mobile breakpoint -->
+        <div></div>
+      </div>
+    </header>
+
+    <!-- Content container -->
+    <main>
+      <!-- Image -->
+      <section class="menu-page">
+        <img
+          class="menu-page__image"
+          src="./public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+          alt="Bastille dish"
+        />
+      </section>
+      <!-- Main menu card containing header, heart and all the cards -->
+      <section class="menu-ctn">
+        <div class="menu__title">
+          <h2 class="title">The Enchanted Plate</h2>
+          <div class="heart-anime">
+            <svg
+              class="card__heart"
+              viewBox="0 0 512 512"
+              width="100"
+              title="heart"
+            >
+              <path
+                d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="card-ctn">
+          <div class="menu-tile-ctn">
+            <p class="title title--menu">ENTREES</p>
+            <div class="menu-tile-ctn__underline"></div>
+          </div>
+
+          <div class="card card--menu">
+            <div class="card-info card-info--menu">
+              <p class="card__title card__title--menu">Foie Gras Ravioli</p>
+              <div class="card__descr">
+                <p class="card__text card__text--menu">With truffle cream</p>
+                <p class="card__text-price">25€</p>
+              </div>
+            </div>
+            <div class="checkmark-anime">
+              <i class="fa-solid fa-circle-check checkmark-anime--icon"></i>
+            </div>
+          </div>
+
+          <div class="card card--menu">
+            <div class="card-info card-info--menu">
+              <p class="card__title card__title--menu">Oscietra Caviar</p>
+              <div class="card__descr">
+                <p class="card__text card__text--menu">With buckwheat blinis</p>
+                <p class="card__text-price">35€</p>
+              </div>
+            </div>
+            <div class="checkmark-anime">
+              <i class="fa-solid fa-circle-check checkmark-anime--icon"></i>
+            </div>
+          </div>
+
+          <div class="card card--menu">
+            <div class="card-info card-info--menu">
+              <p class="card__title card__title--menu">Lobster and Leek Foam</p>
+              <div class="card__descr">
+                <p class="card__text card__text--menu">
+                  Marinated with orange zest
+                </p>
+                <p class="card__text-price">20€</p>
+              </div>
+            </div>
+            <div class="checkmark-anime">
+              <i class="fa-solid fa-circle-check checkmark-anime--icon"></i>
+            </div>
+          </div>
+
+          <div class="card card--menu">
+            <div class="card-info card-info--menu">
+              <p class="card__title card__title--menu">Duck Foie Gras</p>
+              <div class="card__descr">
+                <p class="card__text card__text--menu">
+                  With fig jam and grilled baguette
+                </p>
+                <p class="card__text-price">35€</p>
+              </div>
+            </div>
+            <div class="checkmark-anime">
+              <i class="fa-solid fa-circle-check checkmark-anime--icon"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-ctn">
+          <div class="menu-tile-ctn">
+            <p class="title title--menu">MAIN DISH</p>
+            <div class="menu-tile-ctn__underline"></div>
+          </div>
+
+          <div class="card card--menu">
+            <div class="card-info card-info--menu">
+              <p class="card__title card__title--menu">
+                Fresh Buttered Scallops
+              </p>
+              <div class="card__descr">
+                <p class="card__text card__text--menu">
+                  With white celery puree
+                </p>
+                <p class="card__text-price">40€</p>
+              </div>
+            </div>
+            <div class="checkmark-anime">
+              <i class="fa-solid fa-circle-check checkmark-anime--icon"></i>
+            </div>
+          </div>
+
+          <div class="card card--menu">
+            <div class="card-info card-info--menu">
+              <p class="card__title card__title--menu">Pan-Fried Lobster</p>
+              <div class="card__descr">
+                <p class="card__text card__text--menu">
+                  With mashed sweet potatoes
+                </p>
+                <p class="card__text-price">35€</p>
+              </div>
+            </div>
+            <div class="checkmark-anime">
+              <i class="fa-solid fa-circle-check checkmark-anime--icon"></i>
+            </div>
+          </div>
+
+          <div class="card card--menu">
+            <div class="card-info card-info--menu">
+              <p class="card__title card__title--menu">Braised Ox Tail</p>
+              <div class="card__descr">
+                <p class="card__text card__text--menu">
+                  With wild rice and orange zest
+                </p>
+                <p class="card__text-price">44€</p>
+              </div>
+            </div>
+            <div class="checkmark-anime">
+              <i class="fa-solid fa-circle-check checkmark-anime--icon"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-ctn">
+          <div class="menu-tile-ctn">
+            <p class="title title--menu">DESSERTS</p>
+            <div class="menu-tile-ctn__underline"></div>
+          </div>
+
+          <div class="card card--menu">
+            <div class="card-info card-info--menu">
+              <p class="card__title card__title--menu">
+                Chocolate and Hazelnut Macaroon
+              </p>
+              <div class="card__descr">
+                <p class="card__text card__text--menu">
+                  With caramel butter ice cream
+                </p>
+                <p class="card__text-price">18€</p>
+              </div>
+            </div>
+            <div class="checkmark-anime">
+              <i class="fa-solid fa-circle-check checkmark-anime--icon"></i>
+            </div>
+          </div>
+
+          <div class="card card--menu">
+            <div class="card-info card-info--menu">
+              <p class="card__title card__title--menu">Baba au rhum</p>
+              <div class="card__descr">
+                <p class="card__text card__text--menu">With lemon drizzle</p>
+                <p class="card__text-price">22€</p>
+              </div>
+            </div>
+            <div class="checkmark-anime">
+              <i class="fa-solid fa-circle-check checkmark-anime--icon"></i>
+            </div>
+          </div>
+
+          <div class="card card--menu">
+            <div class="card-info card-info--menu">
+              <p class="card__title card__title--menu">Lemon Meringue Pie</p>
+              <div class="card__descr">
+                <p class="card__text card__text--menu">Deconstructed</p>
+                <p class="card__text-price">23€</p>
+              </div>
+            </div>
+            <div class="checkmark-anime">
+              <i class="fa-solid fa-circle-check checkmark-anime--icon"></i>
+            </div>
+          </div>
+        </div>
+
+        <button class="button button--order" type="submit">Order</button>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <a class="footer__link-home" href="#home">
+        <img
+          class="footer__logo"
+          src="./public/images/logo/ohmyfood@2x.svg"
+          alt="ohmyfood logo"
+        />
+      </a>
+      <ul class="footer__list">
+        <li class="footer__list-item">
+          <a class="footer__link" href="#">
+            <i class="fa-solid fa-utensils footer__icon"></i>
+            <span class="footer__link--color"> Suggest a restaurant </span>
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__link" href="#">
+            <i class="fa-solid fa-handshake-angle footer__icon"></i>
+            <span class="footer__link--color"> Become a partner </span>
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__link" href="#">
+            <span class="footer__link--color"> Legal </span>
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a
+            class="footer__link"
+            href="mailto:YOUR_EMAIL_ADDRESS?subject=Contact&body=Thanks%20for%20contacting%20us"
+          >
+            <span class="footer__link--color"> Contact </span>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
