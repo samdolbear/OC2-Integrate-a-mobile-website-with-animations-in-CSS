@@ -1,4 +1,4 @@
-// -------------------- Fonts START --------------------
+// -------------------- Fonts START -h2-------------------
 // Text
 body {
     font-family: $text, sans-serif;
@@ -238,7 +238,7 @@ main {
     stroke: lighten($quaternary-color, 25%);
     stroke-width: 20;
     z-index: 1;
-    margin-right: 40px;
+    margin-right: 25px;
     cursor: pointer;
     svg {
         overflow: visible;
@@ -342,10 +342,9 @@ main {
     padding-left: 20px;
     width: 90%;
     @include non-mobile {
-        width: 500px;
-        justify-content: center;
-        gap: 350px;
+        max-width: 540px;
     }
+    
 }
 
 .card-ctn {
