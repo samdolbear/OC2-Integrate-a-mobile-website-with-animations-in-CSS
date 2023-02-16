@@ -149,7 +149,7 @@
 
 // Menu Cards
 .card {
-    &--menu{
+    &--menu {
       width: 100%;
       height: auto;
       display: flex;
@@ -158,6 +158,10 @@
       @include non-mobile {
         width: 500px;
       }
+      &:hover,
+      &:active {
+        @include box-shadow;
+    }
     }
     &-info--menu {
       width: 100%;
@@ -188,10 +192,6 @@
       font-weight: bold;
       margin-right: 15px;
     }
-    // &:hover,
-    // &:active {
-    //     @include box-shadow;
-    // }
 }
 // -------------------- Cards END --------------------
 
