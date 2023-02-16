@@ -188,10 +188,10 @@
       font-weight: bold;
       margin-right: 15px;
     }
-    &:hover,
-    &:active {
-        @include box-shadow;
-    }
+    // &:hover,
+    // &:active {
+    //     @include box-shadow;
+    // }
 }
 // -------------------- Cards END --------------------
 
