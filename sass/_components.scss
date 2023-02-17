@@ -20,15 +20,15 @@
 }
 
 .loading__spinner {
-    border: 10px solid $primary-color; 
-    border-top: 10px solid secondary-color; 
-    border-right: 10px solid lighten($quaternary-color, 90); 
-    border-bottom: 10px solid $tertiary-color; 
+    border: 10px solid transparent; 
+    border-top: 10px solid $tertiary-color; 
+    border-right: 10px solid $tertiary-color; 
+    border-bottom: 10px solid $secondary-color; 
     border-left: 10px solid $secondary-color; 
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    animation: loading__spinner 3s cubic-bezier(.25,.1,.25,1);
+    animation: loading__spinner 3s cubic-bezier(.25,1.25,.8,.7);
 }
 
 @keyframes loading__spinner {
